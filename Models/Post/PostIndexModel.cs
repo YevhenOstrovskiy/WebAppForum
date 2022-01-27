@@ -12,6 +12,10 @@ namespace WebAppForum.Models
         public string AuthorName { get; set;}      
         public DateTime Created { get; set; }
         public string PostContent { get; set; }
+        public bool IsAuthorAdmin { get; set; }
+
+        public int ForumId { get; set; }
+        public string ForumName { get; set; }
 
         public IEnumerable<PostReplyModel> Replies { get; set; }
     }
